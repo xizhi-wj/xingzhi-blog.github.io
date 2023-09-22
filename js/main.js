@@ -1,26 +1,51 @@
 document.addEventListener('DOMContentLoaded', function () {
-  let headerContentWidth, $nav
+  // let headerContentWidth, $nav
   let mobileSidebarOpen = false
 
-  const adjustMenu = init => {
-    const getAllWidth = ele => {
-      let width = 0
-      ele.length && Array.from(ele).forEach(i => { width += i.offsetWidth })
-      return width
+  // const adjustMenu = init => {
+  //   const getAllWidth = ele => {
+  //     let width = 0
+  //     ele.length && Array.from(ele).forEach(i => { width += i.offsetWidth })
+  //     return width
+  //   }
+
+  //   if (init) {
+  //     const blogInfoWidth = getAllWidth(document.querySelector('#blog-info > a').children)
+  //     const menusWidth = getAllWidth(document.getElementById('menus').children)
+  //     headerContentWidth = blogInfoWidth + menusWidth
+  //     $nav = document.getElementById('nav')
+  //   }
+
+  //   let hideMenuIndex = ''
+  //   if (window.innerWidth <= 768) hideMenuIndex = true
+  //   else hideMenuIndex = headerContentWidth > $nav.offsetWidth - 120
+
+  //   if (hideMenuIndex) {
+  //     $nav.classList.add('hide-menu')
+  //   } else {
+  //     $nav.classList.remove('hide-menu')
+  //   }
+  // }
+
+  const $blogName = document.getElementById('site-name')
+  let blogNameWidth = $blogName && $blogName.offsetWidth
+  const $menusEle = document.querySelector('#menus .menus_items')
+  let menusWidth = $menusEle && $menusEle.offsetWidth
+  const $searchEle = document.querySelector('#search-button')
+  let searchWidth = $searchEle && $searchEle.offsetWidth
+
+  const adjustMenu = (change = false) => {
+    if (change) {
+      blogNameWidth = $blogName && $blogName.offsetWidth
+      menusWidth = $menusEle && $menusEle.offsetWidth
+      searchWidth = $searchEle && $searchEle.offsetWidth
     }
+    const $nav = document.getElementById('nav')
+    let t
+    if (window.innerWidth < 768) t = true
+    else t = blogNameWidth + menusWidth + searchWidth > $nav.offsetWidth - 120
 
-    if (init) {
-      const blogInfoWidth = getAllWidth(document.querySelector('#blog-info > a').children)
-      const menusWidth = getAllWidth(document.getElementById('menus').children)
-      headerContentWidth = blogInfoWidth + menusWidth
-      $nav = document.getElementById('nav')
-    }
-
-    let hideMenuIndex = ''
-    if (window.innerWidth <= 768) hideMenuIndex = true
-    else hideMenuIndex = headerContentWidth > $nav.offsetWidth - 120
-
-    if (hideMenuIndex) {
+    if (t) {
       $nav.classList.add('hide-menu')
     } else {
       $nav.classList.remove('hide-menu')
@@ -28,9 +53,14 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // 初始化header
+  // const initAdjust = () => {
+  //   adjustMenu(true)
+  //   $nav.classList.add('show')
+  // }
+  // 初始化header
   const initAdjust = () => {
-    adjustMenu(true)
-    $nav.classList.add('show')
+    adjustMenu()
+    document.getElementById('nav').classList.add('show')
   }
 
   // sidebar menus
@@ -321,6 +351,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const currentTop = window.scrollY || document.documentElement.scrollTop
       const isDown = scrollDirection(currentTop)
       if (currentTop > 56) {
+        $header.classList.add('is-top-bar')
         if (isDown) {
           if ($header.classList.contains('nav-visible')) $header.classList.remove('nav-visible')
           if (isChatBtn && isChatShow === true) {
@@ -340,7 +371,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       } else {
         if (currentTop === 0) {
-          $header.classList.remove('nav-fixed', 'nav-visible')
+          // $header.classList.remove('nav-fixed', 'nav-visible')
+          $header.classList.remove('is-top-bar')
         }
         $rightside.style.cssText = "opacity: ''; transform: ''"
       }

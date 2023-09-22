@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4264124 */
+  src: url('//at.alicdn.com/t/c/font_4264124_pi5gdetbxgc.woff2?t=1695397440182') format('woff2'),
+       url('//at.alicdn.com/t/c/font_4264124_pi5gdetbxgc.woff?t=1695397440182') format('woff'),
+       url('//at.alicdn.com/t/c/font_4264124_pi5gdetbxgc.ttf?t=1695397440182') format('truetype');
+}
+
+.xingzhifont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-up-line:before {
+  content: "\e67a";
+}
+
+.icon-moon-clear-fill:before {
+  content: "\e835";
+}
+
+.icon-side-bar-fill:before {
+  content: "\e676";
+}
+
+.icon-keyboard-box-fill:before {
+  content: "\ee2d";
+}
+
+.icon-cc-close-crude:before {
+  content: "\e62a";
+}
+
+.icon-igw-f-dashboard-rectangle:before {
+  content: "\e664";
+}
+
+.icon-shezhi-xianxing:before {
+  content: "\e8b7";
+}
+
+.icon-touzi:before {
+  content: "\e76d";
+}
+
+.icon-gongjiao:before {
+  content: "\e62d";
+}
+
+.icon-shouye:before {
+  content: "\e751";
+}
+
+.icon-grip-vertical:before {
+  content: "\eb3d";
+}
