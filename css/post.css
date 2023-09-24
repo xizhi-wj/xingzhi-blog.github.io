@@ -1,0 +1,337 @@
+#page-header.post-bg {
+  background-color: var(--xingzhi-background);
+  transition: 0.6s;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1300px) {
+  #page-header.post-bg {
+    height: 25rem;
+  }
+
+  #page-header.post-bg:before {
+    height: 25rem;
+    opacity: 0;
+    background-color: var(--xingzhi-main);
+    animation: slide-in-op 0.6s 0s forwards;
+  }
+
+  .coverdiv.loaded {
+    display: block;
+    opacity: 0.5;
+    animation: showCover 1s 0.3s backwards;
+    transform: rotate(10deg) translateY(-10%) scale(2);
+  }
+
+  .coverdiv {
+    width: 70%;
+    height: 100%;
+    position: relative;
+    margin: 0 -20% 0 auto;
+    overflow: hidden;
+    margin-bottom: 0;
+    transform: rotate(10deg) translateY(-8%) scale(1.8);
+    filter: blur(10px);
+    opacity: 0;
+  }
+
+  #page-header #post-info {
+    height: calc(100% + 0px);
+    top: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  #post-info .post-title {
+    width: 1100px;
+    font-size: 3.2rem !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .coverdiv.loaded {
+    display: block;
+    opacity: 0.5;
+    animation: showCover 1s 0.3s backwards;
+    transform: rotate(10deg) translateY(-10%) scale(2);
+  }
+
+  .coverdiv {
+    width: 70%;
+    height: 100%;
+    position: relative;
+    margin: 0 -20% 0 auto;
+    overflow: hidden;
+    margin-bottom: 0;
+    transform: rotate(10deg) translateY(-8%) scale(1.8);
+    filter: blur(10px);
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .post #nav #site-name:hover {
+    background: var(--xingzhi-white-op);
+    color: var(--xingzhi-white);
+  }
+}
+
+#page-header.post-bg::before {
+  transition: 0.3s;
+  opacity: 0.93;
+  height: 25rem;
+  background-color: var(--xingzhi-main);
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  content: "";
+}
+
+.coverdiv {
+  width: 70%;
+  height: 100%;
+  position: relative;
+  margin: 0 -20% 0 auto;
+  overflow: hidden;
+  margin-bottom: 0;
+  transform: rotate(10deg) translateY(-10%) scale(2);
+  filter: blur(10px);
+}
+
+.coverdiv:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 110px -130px 300px 60px var(--xingzhi-main) inset;
+}
+
+.post-bg #post-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-width: 50vw;
+  min-height: 20rem;
+  opacity: 0.8;
+}
+
+#page-header #post-info {
+  position: absolute;
+  padding: 0 8%;
+  width: 100%;
+  text-align: center;
+}
+
+#page-header #post-info {
+  top: 0;
+  position: absolute;
+  padding: 0 3rem;
+  margin: 0 auto;
+  z-index: 10;
+  color: var(--xingzhi-white);
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: calc(100% + 0px);
+  justify-content: center;
+  animation: slide-in 0.6s 0s backwards;
+}
+
+#post-firstinfo {
+  text-align: left;
+  display: flex;
+  white-space: nowrap;
+  user-select: none;
+}
+
+#post-info .post-title {
+  color: var(--xingzhi-white);
+  font-weight: 700;
+  font-size: 2.3rem;
+  line-height: 1.2;
+  text-align: left;
+  margin: 1rem 0 1rem 0 !important;
+  -webkit-line-clamp: 2;
+  padding: 0;
+  overflow: hidden;
+}
+
+#post-info #post-meta {
+  color: var(--light-grey);
+  font-size: 95%;
+}
+
+#post-info #post-meta {
+  color: var(--xingzhi-white);
+  margin-top: 0.4rem;
+  transition: 0.3s;
+  display: flex;
+  user-select: none;
+}
+
+#post-firstinfo .meta-firstline {
+  display: flex;
+  align-items: center;
+  height: 32px;
+}
+
+a.post-meta-original {
+  background: var(--xingzhi-white-op) !important;
+  color: var(--xingzhi-white) !important;
+  padding: 0 0.6rem;
+  /* font-size: 0.7rem; */
+  margin: auto;
+  border-radius: 8px;
+  font-weight: 700;
+  height: 32px;
+  line-height: 32px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+span.post-meta-categories:not(:first-child) {
+  margin-left: 8px;
+}
+
+span.post-meta-categories {
+  background-color: var(--xingzhi-white-op);
+  padding: 0 0.6rem;
+  border-radius: 8px;
+  line-height: 32px;
+  height: 32px;
+  transition: 0.3s;
+}
+
+#post-firstinfo > div > span.post-meta-categories > a {
+  font-weight: 800;
+}
+
+a.post-meta-categories {
+  color: var(--xingzhi-white);
+  /* font-size: 0.7rem; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.meta-firstline .tag_share {
+  margin-left: 1rem;
+}
+
+#post-firstinfo .post-meta__tags {
+  color: var(--xingzhi-white);
+  opacity: 0.8;
+  margin-right: 8px;
+}
+
+span.icon-hashtag {
+  margin-right: 2px;
+}
+
+#post-info .post-title {
+  color: var(--xingzhi-white);
+  font-weight: 700;
+  font-size: 2.3rem;
+  line-height: 1.2;
+  text-align: left;
+  margin: 1rem 0 1rem 0 !important;
+  -webkit-line-clamp: 2;
+  padding: 0;
+  overflow: hidden;
+}
+
+#post-meta > div {
+  text-align: left;
+}
+
+.meta-secondline {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main-hero-waves-area {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -11px;
+  z-index: 5;
+}
+
+.waves-area .waves-svg {
+  width: 100%;
+  height: 60px;
+}
+
+svg.waves-svg {
+  shape-rendering: auto;
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+  fill: var(--xingzhi-background);
+  opacity: 0.5;
+}
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+  fill: var(--xingzhi-background);
+  opacity: 0.6;
+}
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+  fill: var(--xingzhi-background);
+  opacity: 0.7;
+}
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+  fill: var(--xingzhi-background);
+}
+
+.parallax > use {
+  animation: move-forever 30s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+.post .back-home-button:hover {
+  background: var(--xingzhi-white-op);
+  color: var(--xingzhi-white);
+}
+
+a.post-meta-original:hover {
+  color: var(--xingzhi-main) !important;
+  background: var(--xingzhi-white) !important;
+  border-radius: 8px !important;
+}
+
+span.post-meta-categories:hover {
+  background-color: var(--xingzhi-white);
+}
+
+span.post-meta-categories:hover a.post-meta-categories {
+  color: var(--xingzhi-main);
+}

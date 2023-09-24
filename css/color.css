@@ -1,96 +1,125 @@
-/* 颜色 */
 :root {
-    --xingzhi-theme-op: #4259ef23;
-    --xingzhi-gray-op: #9999992b;
-    --xingzhi-theme-top: var(--xingzhi-theme);
-    --xingzhi-white: #fff;
-    --xingzhi-white-op: rgba(255, 255, 255, 0.2);
-    --xingzhi-black: #000;
-    --xingzhi-black-op: rgba(0, 0, 0, 0.2);
-    --xingzhi-none: #00000000;
-    --xingzhi-gray: #999999;
-    --xingzhi-yellow: #ffc93e;
-    --xingzhi-border-radius: 8px;
-    --xingzhi-main: var(--xingzhi-theme);
-    --xingzhi-main-op: var(--xingzhi-theme-op);
-    --xingzhi-shadow-theme: 0 8px 12px -3px var(--xingzhi-theme-op);
-    --xingzhi-shadow-main: 0 8px 12px -3px var(--xingzhi-main-op);
-    --xingzhi-shadow-blue: 0 8px 12px -3px rgba(40, 109, 234, 0.2);
-    --xingzhi-shadow-white: 0 8px 12px -3px rgba(255, 255, 255, 0.2);
-    --xingzhi-shadow-black: 0 0 12px 4px rgba(0, 0, 0, 0.05);
-    --xingzhi-shadow-yellow: 0px 38px 77px -26px rgba(255, 201, 62, 0.12);
-    --xingzhi-shadow-red: 0 8px 12px -3px #ee7d7936;
-    --xingzhi-shadow-green: 0 8px 12px -3px #87ee7936;
-    --xingzhi-shadow-border: 0 8px 16px -4px #2c2d300c;
-    --xingzhi-shadow-blackdeep: 0 2px 16px -3px rgba(0, 0, 0, 0.15);
-    --xingzhi-logo-color: linear-gradient(215deg, #4584ff 30%, #ff7676 70%);
-    --style-border: 1px solid var(--xingzhi-card-border);
-    --xingzhi-blue-main: #3b70fc;
-    --style-border-hover: 1px solid var(--xingzhi-main);
-    --style-border-dashed: 1px dashed var(--xingzhi-theme-op);
-    --style-border-avatar: 4px solid var(--xingzhi-background);
-    --style-border-always: 1px solid var(--xingzhi-card-border);
-    --xingzhi-white-acrylic1: #fefeff !important;
-    --xingzhi-white-acrylic2: #fcfdff !important;
-    --xingzhi-black-acrylic2: #08080a !important;
-    --xingzhi-black-acrylic1: #0b0b0e !important;
-    --xingzhi-main-none: #b8b8b800 !important;
-    
+  --xingzhi-white: #fff;
+  --xingzhi-white-op: rgba(255, 255, 255, 0.15);
+  --xingzhi-black: #000;
+  --xingzhi-black-op: rgba(0, 0, 0, 0.15);
+  --xingzhi-none: #00000000;
+  --xingzhi-gray: #999999;
+  --xingzhi-gray-op: #9999992b;
+  --xingzhi-vip: #e5a80d;
+  --xingzhi-main: var(--xingzhi-theme);
+  --xingzhi-main-op: var(--xingzhi-theme-op);
+  --xingzhi-main-op-deep: var(--xingzhi-theme-op-deep);
+  --xingzhi-main-op-light: var(--xingzhi-theme-op-light);
+  --xingzhi-main-none: var(--xingzhi-theme-none);
+  --xingzhi-shadow-theme: 0 8px 12px -3px var(--xingzhi-theme-op);
+  --xingzhi-shadow-blackdeep: 0 2px 16px -3px rgba(0, 0, 0, 0.15);
+  --xingzhi-shadow-main: 0 8px 12px -3px var(--xingzhi-main-op);
+  --xingzhi-shadow-blue: 0 8px 12px -3px rgba(40, 109, 234, 0.2);
+  --xingzhi-shadow-white: 0 8px 12px -3px rgba(255, 255, 255, 0.2);
+  --xingzhi-shadow-black: 0 0 12px 4px rgba(0, 0, 0, 0.05);
+  --xingzhi-shadow-yellow: 0px 38px 77px -26px rgba(255, 201, 62, 0.12);
+  --xingzhi-shadow-red: 0 8px 12px -3px #ee7d7936;
+  --xingzhi-shadow-green: 0 8px 12px -3px #87ee7936;
+  --xingzhi-logo-color: linear-gradient(215deg, #4584ff 0%, #cf0db9 100%);
+  --xingzhi-snackbar-time: 5s;
+}
+
+::selection {
+  background: var(--xingzhi-fontcolor);
+  color: var(--xingzhi-background);
+}
+
+[data-theme="light"] {
+  --xingzhi-theme: #425aef;
+  --xingzhi-theme-op: #4259ef23;
+  --xingzhi-theme-op-deep: #4259efdd;
+  --xingzhi-theme-op-light: #4259ef0d;
+  --xingzhi-theme-none: #4259ef01;
+  --xingzhi-blue: #425aef;
+  --xingzhi-red: #f04a63;
+  --xingzhi-pink: #ff7c7c;
+  --xingzhi-green: #57bd6a;
+  --xingzhi-yellow: #936900;
+  --xingzhi-yellow-op: #d99c001a;
+  --xingzhi-orange: #e38100;
+  --xingzhi-purple: #7a60d2;
+  --xingzhi-fontcolor: #363636;
+  --xingzhi-background: #f7f9fe;
+  --xingzhi-reverse: #000;
+  --xingzhi-maskbg: rgba(255, 255, 255, 0.6);
+  --xingzhi-maskbgdeep: rgba(255, 255, 255, 0.85);
+  --xingzhi-hovertext: var(--xingzhi-main);
+  --xingzhi-ahoverbg: #f7f7fa;
+  --xingzhi-lighttext: var(--xingzhi-main);
+  --xingzhi-secondtext: rgba(60, 60, 67, 0.8);
+  --xingzhi-scrollbar: rgba(60, 60, 67, 0.4);
+  --xingzhi-card-btn-bg: #edf0f7;
+  --xingzhi-post-blockquote-bg: #fafcff;
+  --xingzhi-post-tabs-bg: #f2f5f8;
+  --xingzhi-secondbg: #f7f7f9;
+  --xingzhi-shadow-nav: 0 5px 12px -5px rgba(102, 68, 68, 0.05);
+  --xingzhi-card-bg: #fff;
+  --xingzhi-card-bg-op: var(--xingzhi-black-op);
+  --xingzhi-card-bg-none: rgba(255, 255, 255, 0);
+  --xingzhi-shadow-lightblack: 0 5px 12px -5px rgba(102, 68, 68, 0);
+  --xingzhi-shadow-light2black: 0 5px 12px -5px rgba(102, 68, 68, 0);
+  --xingzhi-card-border: #e3e8f7;
+  --xingzhi-shadow-border: 0 8px 16px -4px #2c2d300c;
+  --style-border: 1px solid var(--xingzhi-card-border);
+  --style-border-always: 1px solid var(--xingzhi-card-border);
+  --style-border-hover: 1px solid var(--xingzhi-main);
+  --style-border-hover-always: 1px solid var(--xingzhi-main);
+  --style-border-dashed: 1px dashed var(--xingzhi-theme-op);
+  --style-border-forever: 2px solid var(--xingzhi-main);
+}
+
+[data-theme="dark"] {
+  --xingzhi-theme: #ffc848;
+  --xingzhi-theme-op: #f2b94b23;
+  --xingzhi-theme-op-deep: #f2b94bdd;
+  --xingzhi-theme-none: #f2b94b00;
+  --xingzhi-blue: #0084ff;
+  --xingzhi-red: #ff3842;
+  --xingzhi-pink: #d44040;
+  --xingzhi-green: #3e9f50;
+  --xingzhi-purple: #7a60d2;
+  --xingzhi-yellow: #ffc93e;
+  --xingzhi-yellow-op: #ffc93e30;
+  --xingzhi-orange: #ff953e;
+  --xingzhi-fontcolor: #f7f7fa;
+  --xingzhi-background: #18171d;
+  --xingzhi-reverse: #fff;
+  --xingzhi-maskbg: rgba(0, 0, 0, 0.6);
+  --xingzhi-maskbgdeep: rgba(0, 0, 0, 0.85);
+  --xingzhi-hovertext: #0a84ff;
+  --xingzhi-ahoverbg: #fff;
+  --xingzhi-lighttext: var(--xingzhi-theme);
+  --xingzhi-secondtext: #a1a2b8;
+  --xingzhi-scrollbar: rgba(200, 200, 223, 0.4);
+  --xingzhi-card-btn-bg: #30343f;
+  --xingzhi-post-blockquote-bg: #000;
+  --xingzhi-post-tabs-bg: #121212;
+  --xingzhi-secondbg: #21232a;
+  --xingzhi-shadow-nav: 0 5px 20px 0px rgba(28, 28, 28, 0.4);
+  --xingzhi-card-bg: #1b1c20;
+  --xingzhi-card-bg-op: var(--xingzhi-white-op);
+  --xingzhi-card-bg-none: #1d1b2600;
+  --xingzhi-shadow-lightblack: 0 5px 12px -5px rgba(102, 68, 68, 0);
+  --xingzhi-shadow-light2black: 0 5px 12px -5px rgba(102, 68, 68, 0);
+  --xingzhi-card-border: #3d3d3f;
+  --xingzhi-shadow-border: 0 8px 16px -4px #00000050;
+  --style-border: 1px solid var(--xingzhi-card-border);
+  --style-border-always: 1px solid var(--xingzhi-card-border);
+  --style-border-hover: 1px solid var(--xingzhi-theme);
+  --style-border-hover-always: 1px solid var(--xingzhi-theme);
+  --style-border-dashed: 1px dashed var(--xingzhi-theme-op);
+  --style-border-forever: 2px solid var(--xingzhi-lighttext);
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --style-border: 1px solid var(--xingzhi-none);
+    --style-border-hover: 1px solid var(--xingzhi-none);
   }
-  
-  [data-theme="light"] {
-    --xingzhi-theme: #3b70fc;
-    --xingzhi-theme-op: #4259ef23;
-    --xingzhi-blue: #3b70fc;
-    --xingzhi-red: #d8213c;
-    --xingzhi-pink: #ff7c7c;
-    --xingzhi-green: #57bd6a;
-    --xingzhi-fontcolor: #363636;
-    --xingzhi-background: #f7f9fe;
-    --xingzhi-reverse: #000;
-    --xingzhi-maskbg: rgba(255, 255, 255, 0.6);
-    --xingzhi-maskbgdeep: rgba(255, 255, 255, 0.85);
-    --xingzhi-hovertext: var(--xingzhi-theme);
-    --xingzhi-ahoverbg: #f7f7fa;
-    --xingzhi-lighttext: var(--xingzhi-main);
-    --xingzhi-secondtext: rgba(60, 60, 67, 0.6);
-    --xingzhi-scrollbar: rgba(60, 60, 67, 0.4);
-    --xingzhi-card-btn-bg: #edf0f7;
-    --xingzhi-post-blockquote-bg: #fafcff;
-    --xingzhi-post-tabs-bg: #f2f5f8;
-    --xingzhi-secondbg: #edf0f7;
-    --xingzhi-shadow-nav: 0 5px 12px -5px rgba(102, 68, 68, 0.05);
-    --xingzhi-card-bg: #fff;
-    --xingzhi-shadow-lightblack: 0 5px 12px -5px rgba(102, 68, 68, 0);
-    --xingzhi-shadow-light2black: 0 5px 12px -5px rgba(102, 68, 68, 0);
-    --xingzhi-card-border: #c0c6d8;
-  }
-  
-  [data-theme="dark"] {
-    --global-bg: #191919;
-    --xingzhi-theme: #0084ff;
-    --xingzhi-theme-op: #0084ff23;
-    --xingzhi-blue: #0084ff;
-    --xingzhi-red: #ff3842;
-    --xingzhi-pink: #ff7c7c;
-    --xingzhi-green: #57bd6a;
-    --xingzhi-fontcolor: #f7f7fa;
-    --xingzhi-background: #18171d;
-    --xingzhi-reverse: #fff;
-    --xingzhi-maskbg: rgba(0, 0, 0, 0.6);
-    --xingzhi-maskbgdeep: rgba(0, 0, 0, 0.85);
-    --xingzhi-hovertext: #0a84ff;
-    --xingzhi-ahoverbg: #fff;
-    --xingzhi-lighttext: #f2b94b;
-    --xingzhi-secondtext: #a1a2b8;
-    --xingzhi-scrollbar: rgba(200, 200, 223, 0.4);
-    --xingzhi-card-btn-bg: #30343f;
-    --xingzhi-post-blockquote-bg: #000;
-    --xingzhi-post-tabs-bg: #121212;
-    --xingzhi-secondbg: #30343f;
-    --xingzhi-shadow-nav: 0 5px 20px 0px rgba(28, 28, 28, 0.4);
-    --xingzhi-card-bg: #1d1b26;
-    --xingzhi-shadow-lightblack: 0 5px 12px -5px rgba(102, 68, 68, 0);
-    --xingzhi-shadow-light2black: 0 5px 12px -5px rgba(102, 68, 68, 0);
-    --xingzhi-card-border: #42444a;
-  }
+}

@@ -1,0 +1,329 @@
+@media screen and (min-width: 1300px) {
+  #aside-content {
+    padding-left: 1rem;
+    animation: slide-in 0.6s 0.3s backwards;
+  }
+
+  #aside-content .card-widget {
+    margin-top: 1rem;
+  }
+
+  #aside-content .card-info .card-info-social-icons i {
+    color: var(--xingzhi-white);
+  }
+}
+
+#aside-content > .card-widget.card-info {
+  background: var(--xingzhi-card-bg);
+  box-shadow: var(--xingzhi-shadow-black);
+  position: relative;
+}
+
+#aside-content > .card-widget:first-child {
+  transition: 0.3s;
+  border: none;
+  box-shadow: none;
+  background: var(--xingzhi-main);
+  margin-top: 0;
+}
+
+#aside-content .card-widget {
+  box-shadow: var(--xingzhi-shadow-border);
+  background: var(--xingzhi-card-bg);
+  border: var(--style-border);
+  transition: 0.3s;
+  border-radius: 12px;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  margin-top: 1rem;
+  padding: 1rem 1.2rem;
+}
+
+.card-widget.card-info {
+  padding: 0 !important;
+}
+
+#aside-content > .card-widget.card-info::before {
+  background: linear-gradient(
+    -25deg,
+    var(--xingzhi-main),
+    var(--xingzhi-main-op-deep),
+    var(--xingzhi-main),
+    var(--xingzhi-main-op-deep)
+  );
+  background-size: 400%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  content: "";
+  animation: gradient 15s ease infinite;
+}
+
+#aside-content > .card-widget.card-info {
+  background: var(--xingzhi-card-bg);
+  box-shadow: var(--xingzhi-shadow-black);
+  position: relative;
+}
+
+#aside-content > div.card-widget.card-info > div.card-content {
+  padding: 1rem 1.2rem;
+  min-height: 320px;
+  height: 320px;
+  position: relative;
+  user-select: none;
+}
+
+#aside-content > .card-widget.card-info::before {
+  background: linear-gradient(
+    -25deg,
+    var(--xingzhi-main),
+    var(--xingzhi-main-op-deep),
+    var(--xingzhi-main),
+    var(--xingzhi-main-op-deep)
+  );
+  background-size: 400%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  content: "";
+  animation: gradient 15s ease infinite;
+}
+
+.card-info-avatar.is-center {
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+}
+
+.is-center {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.author-info__top-group {
+  display: flex;
+  height: 28px;
+  width: 100%;
+}
+
+div#author-info__sayhi {
+  text-align: center;
+  width: fit-content;
+  color: var(--xingzhi-white);
+  background: var(--xingzhi-white-op);
+  font-size: 12px;
+  margin-right: auto;
+  padding: 2px 8px;
+  border-radius: 12px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s;
+  margin: auto;
+  min-width: 100px;
+}
+
+.avatar-img-group {
+  width: 118px;
+  height: 118px;
+  min-width: 118px;
+  min-height: 118px;
+  right: calc(50% - 59px);
+  top: 90px;
+  border-radius: 500px;
+  position: absolute;
+  transition: cubic-bezier(0.69, 0.39, 0, 1.21) 0.3s;
+  transform-origin: bottom;
+}
+
+.page #aside-content .card-info .avatar-img {
+  border-color: var(--xingzhi-card-bg);
+}
+
+#aside-content .card-info .avatar-img {
+  width: 118px;
+  height: 118px;
+  right: 0;
+  top: 0;
+  border-radius: 500px;
+  position: absolute;
+  opacity: 1;
+  transition: 0.3s;
+  border: 5px solid var(--xingzhi-white);
+  overflow: hidden;
+}
+
+.page .avatar-sticker {
+  background: var(--xingzhi-card-bg);
+}
+
+.avatar-sticker {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 33px;
+  height: 33px;
+  line-height: 34px;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s 0.2s;
+  transform: scale(1);
+  background: var(--xingzhi-white);
+  border-radius: 50%;
+}
+
+.avatar-sticker img {
+  width: 26px;
+  height: 26px;
+}
+
+.author-info__description_group {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  left: 0;
+  padding: 1.2rem;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+#aside-content .card-info .author-info__description {
+  line-height: 1.38;
+  margin: 0.6rem 0;
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+}
+
+.page .author-info__description {
+  color: var(--xingzhi-card-bg);
+}
+
+.author-info__description {
+  line-height: 1.38;
+  margin: 0.3rem 0;
+  text-align: justify;
+  color: var(--xingzhi-white);
+  opacity: 1;
+}
+
+.page .author-info__description b {
+  color: var(--xingzhi-card-bg);
+  opacity: 1;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+.author-info__bottom-group {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  padding: 1.2rem;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  align-items: center;
+}
+
+.page #aside-content .card-info .author-info__name,
+.page .author-info__desc {
+  color: var(--xingzhi-card-bg);
+}
+
+#aside-content .card-info .author-info__name {
+  text-align: left;
+  font-weight: 700;
+  color: var(--xingzhi-white);
+  font-size: 20px;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.author-info__desc {
+  font-size: 12px;
+  color: var(--xingzhi-white);
+  opacity: 0.6;
+  line-height: 1;
+}
+
+#aside-content .card-info .card-info-social-icons {
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+#aside-content .card-info .card-info-social-icons .social-icon {
+  margin: 0 0.5rem;
+  color: var(--xingzhi-fontcolor);
+  font-size: 1.4em;
+  cursor: pointer;
+  display: flex;
+}
+
+#aside-content .card-info .card-info-social-icons .social-icon {
+  margin: 0;
+  margin-left: 8px;
+}
+
+#aside-content .card-info .card-info-social-icons i {
+  background: var(--xingzhi-white-op);
+  color: var(--xingzhi-white);
+  font-size: 1rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#aside-content .card-info .card-info-social-icons i {
+  transition: all 0.3s ease 0s;
+  padding: 8px;
+  border-radius: 32px;
+}
+
+.card-widget:hover .author-info__description_group {
+  opacity: 1;
+}
+
+#aside-content .card-info:hover .avatar-img-group {
+  opacity: 0;
+  transform: scale(0);
+}
+
+#aside-content .author-info__description,
+#aside-content .author-info__name,
+#site-name,
+#site-subtitle,
+#site-title {
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+#aside-content .card-info .card-info-social-icons i:hover {
+  background: var(--xingzhi-white-op);
+  transform: scale(1.1);
+  color: var(--xingzhi-white);
+  box-shadow: none;
+}
+
+div#author-info__sayhi:hover {
+  background: var(--xingzhi-white-op);
+  color: var(--xingzhi-white);
+  transform: scale(1.1);
+}

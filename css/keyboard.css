@@ -1,0 +1,63 @@
+#keyboard-tips {
+  position: fixed;
+  top: 80px;
+  left: 20px;
+  z-index: 999;
+  background: var(--xingzhi-maskbgdeep);
+  border-radius: 12px;
+  border: var(--style-border);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transform: translateZ(0);
+  pointer-events: none;
+  box-shadow: var(--xingzhi-shadow-border);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+#keyboard-tips .keyboardTitle {
+  font-size: 12px;
+  color: var(--xingzhi-secondtext);
+  line-height: 1;
+}
+
+#keyboard-tips .keybordList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+}
+
+#keyboard-tips .keybordItem {
+  display: flex;
+  margin-top: 4px;
+}
+
+#keyboard-tips .keyGroup {
+  display: flex;
+  align-items: center;
+  width: 90px;
+}
+
+#keyboard-tips .keyGroup .key {
+  padding: 0.2em 0.4em;
+  font-family: inherit;
+  background-color: var(--xingzhi-card-bg);
+  color: var(--xingzhi-fontcolor);
+  border: var(--style-border);
+  border-color: var(--xingzhi-secondtext);
+  border-bottom: 2px solid var(--xingzhi-secondtext);
+  box-shadow: var(--xingzhi-shadow-border);
+  border-radius: 0.25rem;
+  overflow-wrap: break-word;
+  overflow-x: auto;
+  font-weight: 500;
+  font-size: 0.875em;
+  margin-right: 4px;
+  vertical-align: baseline;
+  line-height: 1;
+  height: 24px;
+}
+

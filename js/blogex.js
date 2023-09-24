@@ -1,7 +1,7 @@
 function checkOpen() {}
 function addStylesheetRule(e) {
-//   document.styleSheets[0].addRule(":root", e);
-  document.styleSheets[0].insertRule(":root", e)
+    document.styleSheets[0].addRule(":root", e);
+  // document.styleSheets[0].insertRule(":root", e);
 }
 function handleStyles(e) {
   "light" == getContrastYIQ(e) && (e = LightenDarkenColor(colorHex(e), -50)),
@@ -90,8 +90,8 @@ function getContrastYIQ(e) {
     : "dark";
 }
 function navTitle() {
-  var e = document.title.replace(" | 张洪xingzhi", "");
-  document.getElementById("page-name-text").innerHTML = e;
+  // var e = document.title.replace(" | 张洪xingzhi", "");
+  // document.getElementById("page-name-text").innerHTML = "";
 }
 function showcopy() {
   if (void 0 !== GLOBAL_CONFIG.Snackbar)
@@ -149,7 +149,7 @@ var getTimeState = () => {
         void 0 !== GLOBAL_CONFIG.Snackbar &&
           btf.snackbarShow(GLOBAL_CONFIG.Snackbar.day_to_night, !1, 2e3),
         $(".menu-darkmode-text").text("浅色模式")),
-      handleCases()
+      handleCases();
     //   updateCharts();
   },
   handleCases = () => {
@@ -439,10 +439,10 @@ function initBlog() {
     xingzhi.sayhi(),
     xingzhi.addTag(),
     xingzhi.stopImgRightDrag(),
-    xingzhi.addFriendLinksInFooter(),
+    // xingzhi.addFriendLinksInFooter(),
     xingzhi.addPowerLinksInPostRightSide(),
     xingzhi.qrcodeCreate(),
-    xingzhi.hidecookie(),
+    // xingzhi.hidecookie(),
     xingzhi.onlyHome(),
     xingzhi.addNavBackgroundInit(),
     xingzhi.initIndexEssay(),
@@ -454,15 +454,15 @@ function initBlog() {
     xingzhi.hideLoading(),
     xingzhi.tagPageActive(),
     xingzhi.removeBodyPaceClass(),
-    xingzhi.lottieAnimation("footer_mini_logo"),
-    xingzhi.lottieAnimation("lottie_avatar"),
-    xingzhiGPT.aiExplanation(),
-    AIEngine(),
-    addAIToggleListener(),
+    // xingzhi.lottieAnimation("footer_mini_logo"),
+    // xingzhi.lottieAnimation("lottie_avatar"),
+    // xingzhiGPT.aiExplanation(),
+    // AIEngine(),
+    // addAIToggleListener(),
     initObserver(),
     checkUrlAndAddHideBanner(),
-    bindTodayCardHoverEvent(),
-    initializeCommentBarrage();
+    bindTodayCardHoverEvent()
+    // initializeCommentBarrage();
 }
 document.addEventListener(
   "touchstart",
