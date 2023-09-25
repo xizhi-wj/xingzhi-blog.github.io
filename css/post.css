@@ -164,15 +164,19 @@
 
 #post-info #post-meta {
   color: var(--light-grey);
-  font-size: 95%;
+  font-size: 120%;
 }
 
 #post-info #post-meta {
   color: var(--xingzhi-white);
+  width: 50rem;
+  max-width: 100%;
   margin-top: 0.4rem;
   transition: 0.3s;
   display: flex;
   user-select: none;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #post-firstinfo .meta-firstline {
@@ -335,3 +339,109 @@ span.post-meta-categories:hover {
 span.post-meta-categories:hover a.post-meta-categories {
   color: var(--xingzhi-main);
 }
+
+#post-firstinfo .post-meta__tags:hover {
+  color: var(--xingzhi-white);
+  opacity: 1;
+}
+
+.post #post-info #post-meta .post-meta-icon {
+  margin-right: 4px;
+}
+
+.post #post-info #post-meta .post-meta-label {
+  margin-right: 4px;
+}
+
+.post #post-meta i {
+  font-size: 16px;
+}
+
+.post #post-meta span.post-meta-separator {
+  margin: 0 8px;
+}
+
+.nav-fixed .back-home-button:hover {
+  background: var(--xingzhi-lighttext);
+  color: var(--xingzhi-white);
+}
+
+.post-tools-right {
+  padding-right: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#post .tag_share .post-meta__tag-list {
+  display: flex;
+  padding: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#post .tag_share .post-meta__tag-list a {
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 1300px) {
+  #post .tag_share .post-meta__tags {
+    background: var(--xingzhi-card-bg);
+    border: var(--style-border);
+  }
+}
+
+#post .tag_share .post-meta__tags {
+  background: var(--xingzhi-card-bg);
+  border: var(--style-border-always);
+  color: var(--xingzhi-fontcolor);
+  border-radius: 8px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  height: 40px;
+  padding: 0 0.6rem;
+  width: fit-content;
+  font-size: 0.85em;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+#post .tag_share .post-meta__tags span.tags-punctuation {
+  font-size: 12px;
+  margin-right: 1px;
+  display: flex;
+  align-items: center;
+}
+
+#post .tag_share .post-meta__tags span.tagsPageCount,
+#tag-page-tags .tagsPageCount {
+  padding: 2px;
+  background: var(--xingzhi-card-bg);
+  border: var(--style-border-always);
+  min-width: 22.5px;
+  display: inline-block;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--xingzhi-fontcolor);
+  margin-left: 4px;
+}
+
+span.tagsPageCount {
+  background: var(--xingzhi-secondbg);
+  padding: 4px 4px;
+  border-radius: 8px;
+  color: var(--xingzhi-secondtext);
+  line-height: 1;
+  text-align: center;
+  min-width: 35px;
+  display: inline-block;
+  font-size: 1rem;
+  margin-left: 4px;
+}
+
+

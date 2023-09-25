@@ -33,7 +33,7 @@ async function coverColor() {
     try {
       const t = await fetch(e + "?imageAve");
       if (t.ok) {
-        handleStyles("#" + (await t.json()).RGB.slice(2));
+        // handleStyles("#" + (await t.json()).RGB.slice(2));
       }
     } catch (e) {
       console.error("Failed to fetch the image", e);

@@ -423,8 +423,8 @@ i.icon-hashtag {
   cursor: default;
 }
 
-.post-meta-date .article-meta-label,
-.post-meta-date i {
+.page .post-meta-date .article-meta-label,
+.page .post-meta-date i {
   display: none;
 }
 
