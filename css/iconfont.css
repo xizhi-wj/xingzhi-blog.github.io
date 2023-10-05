@@ -1,11 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 4264124 */
-  src: url("//at.alicdn.com/t/c/font_4264124_x7m184eolmg.woff2?t=1695628828507")
-      format("woff2"),
-    url("//at.alicdn.com/t/c/font_4264124_x7m184eolmg.woff?t=1695628828507")
-      format("woff"),
-    url("//at.alicdn.com/t/c/font_4264124_x7m184eolmg.ttf?t=1695628828507")
-      format("truetype");
+  src: url('//at.alicdn.com/t/c/font_4264124_el3i2hg568g.woff2?t=1695658867408') format('woff2'),
+       url('//at.alicdn.com/t/c/font_4264124_el3i2hg568g.woff?t=1695658867408') format('woff'),
+       url('//at.alicdn.com/t/c/font_4264124_el3i2hg568g.ttf?t=1695658867408') format('truetype');
 }
 
 .xingzhifont {
@@ -14,6 +11,18 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-jiantou_yemian_xiangxia:before {
+  content: "\eb0a";
+}
+
+.icon-arrow-down-s-line:before {
+  content: "\e72b";
+}
+
+.icon-file-copy-fill:before {
+  content: "\e6c5";
 }
 
 .icon-hand-heart-fill:before {
@@ -166,8 +175,6 @@
 
 .icon-hashtag:before {
   content: "\e8b5";
-  font-size: 14px;
-  opacity: 0.4;
 }
 
 .icon-arrow-up-line:before {

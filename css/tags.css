@@ -1,0 +1,298 @@
+#page h1.page-title {
+  margin: 0.4rem 2rem 0.2rem;
+}
+
+@media screen and (min-width: 1300px) {
+  #page > div:not(.author-content-item) {
+    animation: slide-in 0.6s 0.2s backwards;
+  }
+}
+
+#page .category-lists {
+  padding: 1rem 0 1.5rem;
+}
+
+#page .tag-cloud-list a:hover {
+  background: var(--xingzhi-main) !important;
+  box-shadow: var(--xingzhi-shadow-blue);
+  color: var(--xingzhi-white) !important;
+  border: var(--style-border-hover);
+}
+
+.is-center {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+#page .tag-cloud-list a {
+  display: flex;
+  width: fit-content;
+  color: var(--xingzhi-fontcolor) !important;
+  font-size: 1.4em !important;
+  padding: 0.2em 0.5em;
+  background: var(--xingzhi-card-bg);
+  margin: 0.5em 0.5em;
+  border-radius: 12px;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  border: var(--style-border-always);
+  box-shadow: var(--xingzhi-shadow-border);
+  align-items: center;
+}
+
+.tag-cloud-list a {
+  display: inline-block;
+  padding: 0 0.4rem;
+  transition: all 0.3s ease 0s;
+}
+
+#page {
+  background: 0 0;
+  border: none;
+  padding: 0;
+}
+
+.page #page .tag-cloud-list span {
+  font-size: 1.4rem;
+}
+
+#page .tag-cloud-list span:before {
+  font-size: 1.2rem;
+}
+
+.icon-hashtag:before {
+  content: "\e8b5";
+  font-size: 14px;
+  opacity: 0.4;
+}
+
+#article-container .highlight:not(.js-file-line-container) {
+  background-color: var(--xingzhi-card-bg) !important;
+  color: var(--xingzhi-fontcolor);
+  border: var(--style-border-always);
+  overflow: hidden;
+}
+
+#article-container figure.highlight {
+  border-radius: 8px 8px 4px 4px;
+}
+
+#article-container figure.highlight {
+  position: relative;
+}
+
+#article-container figure.highlight,
+#article-container pre {
+  overflow: auto;
+  margin: 0 0 1rem;
+  padding: 0;
+  line-height: 1.6;
+}
+
+figure {
+  margin-top: 0.5rem !important;
+}
+
+#article-container figure.highlight .highlight-tools {
+  background: var(--xingzhi-secondbg);
+  border-bottom: var(--style-border-always);
+  color: var(--xingzhi-fontcolor);
+}
+
+#article-container .highlight-tools {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  overflow: hidden;
+  min-height: 1.2rem;
+  height: 2.15em;
+  background: var(--hltools-bg);
+  color: var(--hltools-color);
+  font-size: 16px;
+}
+
+#article-container .highlight-tools .expand {
+  position: absolute;
+  padding: 0.4rem 0.3rem;
+  cursor: pointer;
+  transition: transform 0.3s ease 0s;
+}
+
+#article-container .highlight-tools .expand + .code-lang {
+  left: 1.7rem;
+}
+
+#article-container .highlight-tools .code-lang {
+  text-transform: capitalize;
+  left: 1.9rem;
+}
+
+#article-container .highlight-tools .code-lang {
+  position: absolute;
+  left: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.15em;
+  user-select: none;
+}
+
+#article-container .code-lang {
+  margin-left: 6px;
+}
+
+#article-container .highlight-tools .copy-notice {
+  position: absolute;
+  right: 1.7rem;
+  opacity: 0;
+  transition: opacity 0.4s ease 0s;
+}
+
+.highlight-tools .icon-file-copy-fill {
+  position: absolute;
+  right: 0.7rem;
+  cursor: pointer;
+  transition: color 0.2s;
+  font-size: 18px;
+}
+
+#article-container .code-expand-btn {
+  background: var(--xingzhi-secondbg);
+  transition: 0.3s;
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transform: translateZ(0);
+  border-top: var(--style-border-always);
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+}
+
+#article-container .code-expand-btn i {
+  color: var(--xingzhi-fontcolor);
+  font-size: 14px;
+  line-height: 1;
+  animation: 1.2s ease 0s infinite normal none running code-expand-key;
+}
+
+#article-container .code-expand-btn:not(.expand-done) ~ pre,
+#article-container .code-expand-btn:not(.expand-done) ~ table {
+  overflow: hidden;
+  height: 400px;
+}
+
+#article-container figure.highlight table {
+  display: block;
+  border: none;
+  overflow: scroll;
+}
+
+table {
+  display: table;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  empty-cells: show;
+}
+
+#article-container figure.highlight table td {
+  padding: 0;
+  border: none;
+  height: 100%;
+}
+
+#article-container figure.highlight table td.code {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+#article-container figure.highlight .gutter pre {
+  color: var(--xingzhi-secondtext);
+  background: var(--xingzhi-secondbg);
+  border-right: var(--style-border-always);
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  text-align: right;
+}
+
+#article-container figure.highlight pre {
+  margin: 0;
+  padding: 8px 0;
+  border: none;
+}
+
+#article-container figure.highlight,
+#article-container pre {
+  overflow: auto;
+  margin: 0 0 1rem;
+  padding: 0;
+  line-height: 1.6;
+}
+
+#article-container figure.highlight pre span::selection {
+  background: var(--xingzhi-main) !important;
+  color: var(--xingzhi-white) !important;
+}
+
+#article-container figure.highlight table td {
+  padding: 0;
+  border: none;
+  height: 100%;
+}
+
+#article-container figure.highlight .code pre {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  width: 100%;
+}
+
+figure.highlight pre .tag {
+  color: var(--xingzhi-pink);
+}
+
+figure.highlight pre .attribute,
+figure.highlight pre .css .class,
+figure.highlight pre .css .id,
+figure.highlight pre .css .pseudo,
+figure.highlight pre .html .doctype,
+figure.highlight pre .regexp,
+figure.highlight pre .ruby .constant,
+figure.highlight pre .tag .name,
+figure.highlight pre .variable,
+figure.highlight pre .xml .doctype,
+figure.highlight pre .xml .pi,
+figure.highlight pre .xml .tag .title {
+  color: var(--xingzhi-red);
+}
+
+figure.highlight pre .javascript .function,
+figure.highlight pre .tag .attr {
+  color: #c792ea;
+}
+
+#article-container pre,
+#article-container figure.highlight {
+  background-color: transparent;
+}
+
+a {
+  background-color: transparent;
+  color: var(--xingzhi-fontcolor);
+  text-decoration: none;
+  transition: all 0.2s ease 0s;
+  overflow-wrap: break-word;
+  -webkit-user-drag: none;
+}

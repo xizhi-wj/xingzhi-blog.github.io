@@ -1125,3 +1125,6 @@ ul {
   transform: scale(1) !important;
 }
 
+#nav #site-name .title {
+  font-weight: 700;
+}

@@ -110,12 +110,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const highlightShrinkClass = isHighlightShrink === true ? "closed" : "";
 
     if (isHighlightShrink !== undefined) {
-      highlightShrinkEle = `<i class="heofont icon-arrow-down-s-line expand ${highlightShrinkClass}"></i>`;
+      highlightShrinkEle = `<i class="xingzhifont icon-arrow-down-s-line expand ${highlightShrinkClass}"></i>`;
     }
 
     if (isHighlightCopy) {
       highlightCopyEle =
-        '<div class="copy-notice"></div><i class="heofont icon-file-copy-fill"></i>';
+        '<div class="copy-notice"></div><i class="xingzhifont icon-file-copy-fill"></i>';
     }
 
     const copy = (text, ctx) => {
@@ -204,7 +204,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ) {
         const ele = document.createElement("div");
         ele.className = "code-expand-btn";
-        ele.innerHTML = '<i class="heofont icon-xiaxiangshuangjiantou"></i>';
+        ele.innerHTML = '<i class="xingzhifont icon-jiantou_yemian_xiangxia"></i>';
         ele.addEventListener("click", expandCode);
         fragment.appendChild(ele);
       }
