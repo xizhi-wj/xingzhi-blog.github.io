@@ -366,12 +366,12 @@ document.addEventListener("DOMContentLoaded", function () {
     );
     const jgLengthNoZero = $jgEle.length > 0;
 
-    if (jgLengthNoZero || fbLengthNoZero) {
-      btf.isJqueryLoad(() => {
-        jgLengthNoZero && runJustifiedGallery($jgEle);
-        fbLengthNoZero && addFancybox($fancyboxEle);
-      });
-    }
+    // if (jgLengthNoZero || fbLengthNoZero) {
+    //   btf.isJqueryLoad(() => {
+    //     jgLengthNoZero && runJustifiedGallery($jgEle);
+    //     fbLengthNoZero && addFancybox($fancyboxEle);
+    //   });
+    // }
   };
 
   /**

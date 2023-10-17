@@ -1,0 +1,116 @@
+#article-container p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+#article-container .tag-Link {
+  background: var(--xingzhi-secondbg);
+  border-radius: 8px !important;
+  display: flex;
+  border: var(--style-border);
+  flex-direction: column;
+  padding: 0.3rem 1rem 0.6rem;
+  border-width: 1px !important;
+  margin-top: 1rem;
+}
+
+#article-container .tag-Link:hover {
+  border: var(--style-border-hover);
+}
+
+#article-container .tag-Link .tag-link-tips {
+  border-bottom: var(--style-border-always);
+  padding-bottom: 4px;
+  font-size: 0.8rem;
+  color: var(--xingzhi-gray);
+  font-weight: 400;
+  pointer-events: none;
+}
+
+#article-container .tag-Link:hover .tag-link-tips {
+  color: var(--xingzhi-white);
+  opacity: 0.6;
+}
+
+#article-container .tag-Link .tag-link-bottom {
+  display: flex;
+  margin-top: 0.5rem;
+  align-items: center;
+  justify-content: space-around;
+  pointer-events: none;
+}
+
+#article-container .tag-Link .tag-link-bottom .tag-link-left {
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+  background-size: cover !important;
+  border-radius: 8px;
+  background: var(--xingzhi-card-bg);
+  pointer-events: none;
+  display: flex;
+}
+
+#article-container .tag-Link .tag-link-bottom .tag-link-left i {
+  padding: 0;
+  margin: auto;
+  font-size: 24px;
+  color: var(--xingzhi-fontcolor);
+}
+
+#article-container .tag-Link .tag-link-bottom .tag-link-right {
+  margin-left: 1rem;
+  pointer-events: none;
+}
+
+#article-container .tag-Link .tag-link-bottom .tag-link-right .tag-link-title {
+  font-size: 16px;
+  line-height: 1.2;
+  pointer-events: none;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+#article-container
+  .tag-Link
+  .tag-link-bottom
+  .tag-link-right
+  .tag-link-sitename {
+  font-size: 0.8rem;
+  color: var(--xingzhi-gray);
+  font-weight: 400;
+  margin-top: 8px;
+  pointer-events: none;
+  line-height: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#article-container
+  .tag-Link:hover
+  .tag-link-bottom
+  .tag-link-right
+  .tag-link-sitename {
+  color: var(--xingzhi-white);
+  opacity: 0.6;
+}
+
+#article-container .tag-Link .tag-link-bottom i {
+  margin-left: auto;
+  padding-left: 0.5rem;
+  pointer-events: none;
+}
+
+#article-container a:hover {
+  text-decoration: none;
+  background: var(--xingzhi-main);
+  border: none;
+  color: var(--xingzhi-white);
+  border-radius: 4px;
+}

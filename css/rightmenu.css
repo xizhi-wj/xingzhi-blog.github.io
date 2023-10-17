@@ -1,0 +1,96 @@
+#rightMenu {
+  display: none;
+  position: fixed;
+  padding: 0 0.30rem;
+  width: 12rem;
+  height: fit-content;
+  top: 10%;
+  left: 10%;
+  background-color: var(--xingzhi-maskbgdeep);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  transform: translateZ(0);
+  color: var(--xingzhi-fontcolor);
+  border-radius: 12px;
+  z-index: 99994;
+  border: var(--style-border);
+  user-select: none;
+  box-shadow: var(--xingzhi-shadow-black);
+  transition: border 0.3s;
+}
+
+#rightmenu-mask {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: 0 0;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 101;
+  margin: 0 !important;
+  z-index: 99993;
+}
+
+#rightMenu .rightMenu-group.rightMenu-small {
+  display: flex;
+  justify-content: space-between;
+}
+
+#rightMenu .rightMenu-group {
+  padding: 0.35rem 0.3rem;
+  transition: 0.3s;
+}
+
+#rightMenu .rightMenu-group .rightMenu-item {
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.rightMenu-small .rightMenu-item {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#rightMenu .rightMenu-group .rightMenu-item i {
+  display: inline-block;
+  text-align: center;
+  line-height: 1.5rem;
+  width: 1.5rem;
+  padding: 0 0.30rem;
+}
+
+#rightMenu .rightMenu-line {
+  border-top: 1px dashed var(--xingzhi-theme-op);
+}
+
+#rightMenu .rightMenu-group.rightMenu-line .rightMenu-item {
+  display: flex;
+  gap: 8px;
+}
+
+#rightMenu .rightMenu-line .rightMenu-item {
+  margin: 0.30rem 0;
+  padding: 0.30rem 0;
+}
+
+#rightMenu .rightMenu-group .rightMenu-item span {
+  line-height: 1.5rem;
+}
+
+#rightMenu .rightMenu-line .rightMenu-item i {
+  margin: 0 0.30rem;
+}
+
+#rightMenu .rightMenu-group .rightMenu-item:hover {
+    background-color: var(--xingzhi-lighttext);
+    color: var(--xingzhi-card-bg);
+    box-shadow: var(--xingzhi-shadow-main);
+}
+
+

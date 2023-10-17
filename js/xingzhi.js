@@ -285,7 +285,7 @@ var xingzhi = {
     xingzhi.changeThemeColor(e);
   },
   hideLoading: function () {
-    document.querySelector("#loading-box").classList.add("loaded")
+    document.querySelector("#loading-box").classList.add("loaded");
     //   xingzhiGPT.aiExplanation();
   },
   musicToggle: function () {
@@ -529,6 +529,19 @@ var xingzhi = {
       path: "/lottie/" + e + "/data.json",
     });
   },
+  renderSakuraAndParticle: () => {
+    const nowMode =
+      document.documentElement.getAttribute("data-theme") === "dark"
+        ? "dark"
+        : "light";
+    if (nowMode === "light") {
+      document.getElementById("sakura").classList.remove("hide");
+      document.getElementById("particle_box").classList.add("hide");
+    } else {
+      document.getElementById("sakura").classList.add("hide");
+      document.getElementById("particle_box").classList.remove("hide");
+    }
+  },
 };
 const adjectives = [
     "美丽的",
@@ -664,21 +677,19 @@ const adjectives = [
 
 $(document).ready(function () {
   initBlog();
-});
-//   document.addEventListener("pjax:complete", function () {
-//     (xingzhiGPTIsRunning = !1),
-//       (xingzhi_aiPostExplanation = ""),
-//       (aiTalkMode = !1),
-//       (xingzhiGPTModel = "xingzhiGPT"),
-//       initBlog();
-//   }),
+}),
+  document.addEventListener("pjax:complete", function () {
+    // (xingzhiGPTIsRunning = !1),
+    //   (xingzhi_aiPostExplanation = ""),
+    //   (aiTalkMode = !1),
+    //   (xingzhiGPTModel = "xingzhiGPT"),
+    initBlog();
+  });
 //   document.addEventListener("pjax:click", function () {
 //     console.log("pjax:click"),
 //       xingzhiGPT_timeoutId && clearTimeout(xingzhiGPT_timeoutId),
 //       xingzhiGPT_observer && xingzhiGPT_observer.disconnect();
 //   });
-
-
 
 // $(document).ready(function () {
 //   initBlog();

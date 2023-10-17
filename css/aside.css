@@ -237,6 +237,7 @@ div#author-info__sayhi {
 
 .page #aside-content .card-info .avatar-img {
   border-color: var(--xingzhi-card-bg);
+  /* border-color: var(--style-border-avatar); */
 }
 
 #aside-content .card-info .avatar-img {
@@ -292,7 +293,7 @@ div#author-info__sayhi {
   line-height: 1.38;
   margin: 0.6rem 0;
   text-align: justify;
-  color: rgba(255, 255, 255, 0.8);
+  /* color: rgba(255, 255, 255, 0.8); */
   font-size: 16px;
 }
 

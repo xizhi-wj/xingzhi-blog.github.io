@@ -85,7 +85,7 @@
   width: 100%;
   display: flex;
   position: relative;
-  padding: 0 1.5rem;
+  /* padding: 0 1.5rem; */
   align-items: center;
 }
 
@@ -95,6 +95,7 @@
 
 #nav a {
   border-radius: 8px;
+  padding: 0.3rem 0.4rem;
 }
 
 #nav #blog_name {
@@ -279,12 +280,12 @@ i.xingzhifont {
   flex-direction: row;
   height: 100%;
   align-items: center;
-  margin-right: 1.5rem;
   overflow: hidden;
+  margin-right: 0.5rem;
 }
 
 #page-header #nav #nav-right > div {
-  margin-left: 1rem;
+  margin-left: 0.64rem;
   padding: 0;
 }
 
@@ -819,6 +820,18 @@ i.xingzhifont {
   font-size: 1.3em;
 }
 
+#nav .site-page {
+  font-size: 0.78em;
+}
+
+li,
+ul {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
 #nav .menus_items .menus_item .menus_item_child {
   padding: 6px 4px 8px 4px;
   border-radius: 100px;
@@ -837,12 +850,13 @@ i.xingzhifont {
   transform: translateY(-10px) scale(0.8);
 }
 
-li,
-ul {
-  list-style: none;
+#nav .menus_items .menus_item:hover .menus_item_child {
+  border: var(--style-border-hover);
+  box-shadow: var(--xingzhi-shadow-main);
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0) scale(1);
   display: block;
-  margin: 0;
-  padding: 0;
 }
 
 #nav .menus_items .menus_item .menus_item_child:before {
@@ -862,6 +876,15 @@ ul {
   position: absolute;
   top: -60px;
   left: 0;
+  width: 50%;
+  height: 60px;
+  content: "";
+}
+
+#nav .menus_items .menus_item:last-child .menus_item_child::after {
+  position: absolute;
+  top: -60px;
+  right: 0;
   width: 50%;
   height: 60px;
   content: "";
@@ -889,7 +912,6 @@ ul {
   position: relative;
   padding-bottom: 0.3rem;
   text-shadow: rgba(0, 0, 0, 0.3) 0.05rem 0.05rem 0.1rem;
-  font-size: 0.9em;
   cursor: pointer;
 }
 
@@ -1058,7 +1080,7 @@ ul {
   transition: 0.3s;
   top: 55px;
   pointer-events: auto;
-  left: 1.5rem;
+  left: 0;
   transform: scale(1);
 }
 
@@ -1127,4 +1149,25 @@ ul {
 
 #nav #site-name .title {
   font-weight: 700;
+}
+
+#nav #site-name {
+  padding: 0;
+  transition: 0.3s;
+  display: flex;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  text-shadow: none;
+  border-radius: 40px;
+  cursor: pointer;
+  color: var(--xingzhi-white);
+}
+
+.post #blog_name #site-name .title {
+  -webkit-transition: 0s;
+  -moz-transition: 0s;
+  -o-transition: 0s;
+  -ms-transition: 0s;
+  transition:0s
 }

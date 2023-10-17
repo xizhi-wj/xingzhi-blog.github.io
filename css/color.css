@@ -23,6 +23,7 @@
   --xingzhi-shadow-green: 0 8px 12px -3px #87ee7936;
   --xingzhi-logo-color: linear-gradient(215deg, #4584ff 0%, #cf0db9 100%);
   --xingzhi-snackbar-time: 5s;
+  --xingzhi-post-cover: var(--xingzhi-theme);
 }
 
 ::selection {

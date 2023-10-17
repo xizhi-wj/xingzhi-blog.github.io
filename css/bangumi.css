@@ -1,0 +1,64 @@
+blockquote {
+    border: var(--style-border-always);
+    background-color: var(--xingzhi-secondbg);
+    color: var(--xingzhi-secondtext);
+    border-radius: 8px;
+    margin: 1rem 0;
+    padding:.5rem .8rem
+}
+
+#page.anime {
+    padding: 2rem 2.5rem;
+    background: rgba(255, 255, 255, .9);
+    box-shadow: var(--xingzhi-shadow-border);
+    border-radius: 12px;
+    border: var(--style-border);
+    width: calc(100% - 300px);
+    align-self: flex-start;
+    animation: slide-in .6s .1s backwards;
+    transition: all .3s ease 0s;
+}
+
+#page.anime h1.page-title {
+    margin: 8px 0 20px;
+}
+
+#page #article-container .bangumi-tabs a.bangumi-tab:hover {
+    text-decoration: none!important;
+    font-weight: 500;
+    border-radius: 10px;
+    /* column-gap: var(--xingzhi-ahoverbg); */
+    color: var(--xingzhi-white);
+    background: var(--xingzhi-main);
+    box-shadow: var(--xingzhi-shadow-lightblack);
+}
+
+#page #article-container .bangumi-tabs .bangumi-tab {
+    border-bottom: none;
+    border-radius: 10px;
+}
+
+a.bangumi-tab {
+    padding: 5px 10px!important;
+}
+
+#page #article-container .bangumi-tabs .bangumi-tab {
+    border-bottom: none;
+    border-radius: 10px;
+    color: var(--xingzhi-fontcolor);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#page #article-container .bangumi-tab.bangumi-active {
+    background: var(--xingzhi-theme);
+    color: var(--xingzhi-ahoverbg);
+    border-radius: 10px;
+}
+
+[data-theme="dark"] div#page.anime {
+    background: var(--xingzhi-card-bg);
+}
+
+
+

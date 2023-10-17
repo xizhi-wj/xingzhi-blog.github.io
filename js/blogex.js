@@ -1,6 +1,6 @@
 function checkOpen() {}
 function addStylesheetRule(e) {
-    document.styleSheets[0].addRule(":root", e);
+  document.styleSheets[0].addRule(":root", e);
   // document.styleSheets[0].insertRule(":root", e);
 }
 function handleStyles(e) {
@@ -29,17 +29,49 @@ function handleDefaultStyles() {
 }
 async function coverColor() {
   const e = document.getElementById("post-cover")?.src;
+  const colorThief = new ColorThief();
   if (e)
     try {
-      const t = await fetch(e + "?imageAve");
-      if (t.ok) {
-        // handleStyles("#" + (await t.json()).RGB.slice(2));
-      }
+      // const t = await fetch(e);
+      // if (t.ok) {
+      //   const blob = await t.blob();
+      //   const img = new Image();
+      //   img.src = URL.createObjectURL(blob);
+      //   img.onload = () => {
+      //     const dominantColor = colorThief.getColor(img);
+      //     handleStyles("#" + dominantColor.slice(2));
+      //   };
+      //   // handleStyles("#" + (await t.json()).RGB.slice(2));
+      // }
     } catch (e) {
       console.error("Failed to fetch the image", e);
     }
   else handleDefaultStyles();
 }
+
+function rgbToHex(rgbArray) {
+  if (rgbArray.length !== 3) {
+    throw new Error("Invalid RGB array. It should be an array of length 3.");
+  }
+
+  var r = rgbArray[0].toString(16);
+  var g = rgbArray[1].toString(16);
+  // var b = rgbArray[2].toString(16);
+
+  if (r.length < 2) {
+    r = "0" + r;
+  }
+  if (g.length < 2) {
+    g = "0" + g;
+  }
+  // if (b.length < 2) {
+  //   b = "0" + b;
+  // }
+
+  // return "#" + r + g + b;
+  return "#" + r + g;
+}
+
 function padZero(e, t = 2) {
   return (Array(t).join("0") + e).slice(-t);
 }
@@ -90,8 +122,8 @@ function getContrastYIQ(e) {
     : "dark";
 }
 function navTitle() {
-  // var e = document.title.replace(" | 张洪xingzhi", "");
-  // document.getElementById("page-name-text").innerHTML = "";
+  var e = document.title.replace(" | 星凪", "");
+  document.getElementById("page-name-text").innerHTML = e;
 }
 function showcopy() {
   if (void 0 !== GLOBAL_CONFIG.Snackbar)
@@ -141,10 +173,12 @@ var getTimeState = () => {
     "dark" === document.documentElement.getAttribute("data-theme")
       ? (activateLightMode(),
         saveToLocal.set("theme", "light", 2),
+        xingzhi.renderSakuraAndParticle(),
         void 0 !== GLOBAL_CONFIG.Snackbar &&
           btf.snackbarShow(GLOBAL_CONFIG.Snackbar.night_to_day, !1, 2e3),
         $(".menu-darkmode-text").text("深色模式"))
       : (activateDarkMode(),
+        xingzhi.renderSakuraAndParticle(),
         saveToLocal.set("theme", "dark", 2),
         void 0 !== GLOBAL_CONFIG.Snackbar &&
           btf.snackbarShow(GLOBAL_CONFIG.Snackbar.day_to_night, !1, 2e3),
@@ -439,6 +473,7 @@ function initBlog() {
     xingzhi.sayhi(),
     xingzhi.addTag(),
     xingzhi.stopImgRightDrag(),
+    xingzhi.renderSakuraAndParticle(),
     // xingzhi.addFriendLinksInFooter(),
     xingzhi.addPowerLinksInPostRightSide(),
     xingzhi.qrcodeCreate(),
@@ -461,8 +496,8 @@ function initBlog() {
     // addAIToggleListener(),
     initObserver(),
     checkUrlAndAddHideBanner(),
-    bindTodayCardHoverEvent()
-    // initializeCommentBarrage();
+    bindTodayCardHoverEvent();
+  // initializeCommentBarrage();
 }
 document.addEventListener(
   "touchstart",

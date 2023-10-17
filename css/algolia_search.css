@@ -1,0 +1,156 @@
+#algolia-search .search-dialog {
+  animation: slide-in 0.6s ease 0s 1 normal none running;
+}
+
+.search-dialog:hover {
+  border: var(--style-border-hover);
+  box-shadow: var(--xingzhi-shadow-theme);
+}
+
+.search-dialog {
+  position: fixed;
+  top: 5rem;
+  left: 50%;
+  z-index: 1001;
+  display: none;
+  margin-left: -15rem;
+  padding: 1rem;
+  width: 30rem;
+  background: var(--search-bg);
+  border-radius: 5px;
+}
+
+.search-dialog {
+  border-radius: 12px !important;
+  box-shadow: var(--xingzhi-shadow-lightblack);
+  background: var(--xingzhi-card-bg);
+  border: var(--style-border);
+  transition: 0.3s;
+}
+
+#search-mask {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transform: translateZ(0);
+  background: var(--xingzhi-maskbgdeep);
+}
+
+#search-mask {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: none;
+  /* background: rgba(0,0,0,.6); */
+}
+
+.search-dialog__title {
+  font-weight: 700;
+  color: var(--xingzhi-main);
+}
+
+.search-dialog__title {
+  padding: 0 0 0.7rem;
+  color: #307af6;
+  font-size: 1.4em;
+  line-height: 1;
+}
+
+#algolia-input-panel {
+  margin-bottom: 8px;
+}
+
+#algolia-search-results {
+  padding-top: 8px;
+}
+
+#algolia-tips {
+  padding-top: 12px;
+  color: var(--xingzhi-secondtext);
+  right: 0;
+  margin: auto;
+}
+.search-dialog span.search-close-button {
+  position: absolute;
+  top: 0.8rem;
+  right: 1rem;
+  color: #858585;
+  font-size: 1.4em;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out 0s;
+}
+
+.ais-search-box {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+}
+
+#algolia-search .search-dialog .ais-search-box {
+  padding-top: 8px;
+}
+
+#algolia-search .search-dialog .ais-search-box {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.ais-search-box--input {
+  padding-left: 24px;
+  height: 100%;
+  width: 100%;
+}
+
+#algolia-search .search-dialog .ais-search-box input {
+  padding: 0.25rem 0.7rem;
+  outline: 0;
+  border: 2px solid #307af6;
+  border-radius: 2rem;
+  background: var(--xingzhi-secondbg);
+  color: var(--search-input-color);
+}
+
+#algolia-search .search-dialog .ais-search-box input {
+  border-radius: 8px !important;
+  border: var(--style-border);
+}
+
+#algolia-search .search-dialog .ais-hits--item.algolia-hit-item {
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+#algolia-search .search-dialog .ais-hits--item.algolia-hit-item {
+  padding-left: 0;
+  font-weight: 700;
+}
+
+#algolia-search .ais-hits--item.algolia-hit-item a {
+  color: var(--xingzhi-fontcolor);
+}
+
+#algolia-search .search-dialog .ais-hits--item.algolia-hit-item a {
+  display: block;
+  color: var(--search-result-title);
+  cursor: pointer;
+}
+
+#algolia-search .search-dialog .ais-hits--item.algolia-hit-item a {
+  color: var(--xingzhi-fontcolor);
+  width: auto;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+#algolia-search .search-dialog .ais-hits--item.algolia-hit-item em {
+    color: #f47466;
+    font-weight: 700;
+}
+
+#algolia-search .search-dialog .ais-hits--item.algolia-hit-item em {
+    color: var(--xingzhi-theme);
+    font-style: normal;
+}

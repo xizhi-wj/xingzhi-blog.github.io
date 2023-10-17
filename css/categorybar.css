@@ -53,7 +53,7 @@
 
 .category-bar-item:hover a {
   background: var(--xingzhi-main);
-  color: var(--xingzhi-white);
+  color: var(--xingzhi-card-bg);
 }
 
 .category-bar-item.select a {
