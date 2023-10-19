@@ -47,14 +47,6 @@ for (let i = 0; i < 10; i++) {
     transparent: false, //是否透明
     vertexColors: true, //设置顶点的颜色
   });
-  // for (let j = 0; j < (count / 10) * 3; j++) {
-  //   positions[j * 3] = Math.random() * 1500 - 750;
-  //   positions[j * 3 + 1] = Math.random() * 1500 - 750;
-  //   positions[j * 3 + 2] = Math.random() * 1000 - 500;
-  //   colors[j * 3] = Math.random();
-  //   colors[j * 3 + 1] = Math.random();
-  //   colors[j * 3 + 2] = Math.random();
-  // }
   for (let j = 0; j < (count / 10) * 3; j++) {
     positions[j * 3] = Math.random() * 400 - 200;
     positions[j * 3 + 1] = Math.random() * 400 - 200;
@@ -71,13 +63,6 @@ for (let i = 0; i < 10; i++) {
   particleGeometry.setAttribute("color", new THREE.BufferAttribute(colors, 3));
   const points = new THREE.Points(particleGeometry, material);
   scene.add(points);
-
-  // gsap.to(points.position, {
-  //   z: -800,
-  //   duration: Math.random() * 5 + 3,
-  //   repeat: -1,
-  //   ease: "linear",
-  // });
   gsap.to(points.position, {
     z: 400,
     duration: Math.random() * 5 + 3,

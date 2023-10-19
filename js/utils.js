@@ -337,5 +337,15 @@ const btf = {
     "undefined" == typeof jQuery
       ? getScript(GLOBAL_CONFIG.source.jQuery).then(e)
       : e();
-  }
+  },
+  fadeIn: (e, t) => {
+    e.style.cssText = `display:block;animation: to_show ${t}s`;
+  },
+  fadeOut: (e, t) => {
+    e.addEventListener("animationend", function t() {
+      (e.style.cssText = "display: none; animation: '' "),
+        e.removeEventListener("animationend", t);
+    }),
+      (e.style.animation = `to_hide ${t}s`);
+  },
 };

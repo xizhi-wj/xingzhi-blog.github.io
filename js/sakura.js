@@ -26,7 +26,7 @@ const sakura_array = [];
 const sakura_img = new Image();
 
 sakura_img.src =
-  "https://xizhi-picgo.oss-cn-guangzhou.aliyuncs.com/xingzhiblog/sakura/sakura.png";
+  "https://img.hoshinagi.top/post/sakura.png";
 
 sakura_img.onload = () => {
   resize();

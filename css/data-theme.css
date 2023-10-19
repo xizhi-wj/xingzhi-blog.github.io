@@ -1,18 +1,18 @@
-[data-theme="dark"] .pace-done {
+/* [data-theme="dark"] .pace-done {
   background-color: #18171d;
-}
+} */
 
 [data-theme="dark"] img {
   filter: brightness(1);
 }
 
 [data-theme="dark"] #page-header.not-top-img #nav .darkmode_switchbutton {
-  color: var(--heo-yellow);
+  color: var(--xingzhi-yellow);
 }
 
 [data-theme="dark"] a.darkmode_switchbutton {
-  background: var(--heo-orange) !important;
-  color: var(--heo-white) !important;
+  background: var(--xingzhi-orange) !important;
+  color: var(--xingzhi-white) !important;
 }
 
 @media screen and (min-width: 1300px) {
@@ -21,7 +21,7 @@
   }
 
   [data-theme="dark"] #aside-content .card-info .card-info-social-icons i {
-    color: var(--heo-white);
+    color: var(--xingzhi-white);
   }
 
   [data-theme="dark"]
@@ -30,7 +30,7 @@
     .card-info
     .card-info-social-icons
     i {
-    color: var(--heo-card-bg);
+    color: var(--xingzhi-card-bg);
   }
 
 
@@ -52,12 +52,12 @@
 }
 
 [data-theme="dark"].toc .toc-item.active .toc-link .toc-text {
-  color: var(--heo-white);
+  color: var(--xingzhi-white);
 }
 
 [data-theme="dark"] .page div#author-info__sayhi {
-  background: var(--heo-black-op);
-  color: var(--heo-black);
+  background: var(--xingzhi-black-op);
+  color: var(--xingzhi-black);
 }
 
 [data-theme="light"] #aside-content .card-info a img {
@@ -65,8 +65,8 @@
 }
 
 [data-theme="dark"] .page #aside-content .card-info .card-info-social-icons i {
-  background: var(--heo-black-op);
-  color: var(--heo-card-bg);
+  background: var(--xingzhi-black-op);
+  color: var(--xingzhi-card-bg);
 }
 
 [data-theme=dark] .tk-tag-green {

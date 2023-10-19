@@ -523,7 +523,6 @@ a.extend.prev {
 body {
   position: relative;
   min-height: 100%;
-  background: #18171d;
   color: var(--xingzhi-fontcolor);
   margin: 0;
 }
@@ -534,4 +533,174 @@ body {
 
 #particle_box.hide {
   display: none;
+}
+
+@media screen and (max-width: 899px) {
+  #nav #page-name-mask {
+    display: none !important;
+  }
+
+  #aside-content > .card-widget:first-child {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #nav-console {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #travellings_button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* .page .layout#content-inner {
+    background: var(--xingzhi-background);
+  } */
+
+  #recent-posts {
+    padding: 0 1rem;
+  }
+
+  #aside-content .card-widget.card-info,
+  #aside-content .card-widget.card-announcement {
+    display: none;
+  }
+
+  .aside-content {
+    display: block;
+  }
+
+  #aside-content {
+    z-index: 2;
+    /* background: var(--xingzhi-background); */
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #recent-posts > .recent-post-item.lastestpost-item {
+    margin-top: 10px !important;
+  }
+
+  /* #recent-posts > .recent-post-item:not(:first-child) {
+    margin: 20px 20px 0;
+  } */
+
+  #aside-content > .card-widget:first-child {
+    margin-top: 0;
+  }
+
+  #pagination {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  #pagination .pagination {
+    background: var(--xingzhi-background);
+    transition: 0.3s;
+    display: flex;
+  }
+
+  #pagination .page-number {
+    display: none;
+  }
+
+  #pagination .pagination .space {
+    display: none;
+  }
+
+  #pagination .pagination .extend i {
+    display: none;
+  }
+
+  #pagination .pagination .extend {
+    width: 100%;
+    height: 2.5rem;
+    margin: 0.2rem 0 1rem 0;
+    border-radius: 12px;
+    line-height: 2.5rem;
+    background: var(--xingzhi-card-bg);
+    border: var(--style-border-always);
+    box-shadow: var(--xingzhi-shadow-border);
+  }
+
+  #pagination .pagination .extend:hover {
+    background: var(--xingzhi-theme);
+    color: var(--xingzhi-white);
+  }
+
+  #footer {
+    background: linear-gradient(
+      180deg,
+      var(--xingzhi-background) 0,
+      var(--xingzhi-card-bg) 25%
+    ) !important;
+    margin-top: 0;
+    z-index: 999;
+  }
+
+  div#footer_deal {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #aside-content .sticky_layout {
+    top: 60px;
+  }
+
+  .post #aside-content .sticky_layout {
+    top: 80px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::selection {
+  background: #0079ff;
+  color: #f7f7f7;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--xingzhi-none);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--xingzhi-scrollbar);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sticky_layout .card-widget.card-tags span.xingzhifont {
+  display: none;
+}
+
+#recent-posts .recent-post-item {
+  height: fit-content;
+  background: var(--xingzhi-card-bg);
+  border-radius: 12px;
+  cursor: pointer;
+  border:var(--style-border)
+}
+
+#category, #tag {
+  background-color: transparent;
+}
+
+[data-theme=dark] #category {
+  background-color: var(--xingzhi-card-bg);
+}
+
+[data-theme=dark] #tag {
+  background-color: var(--xingzhi-card-bg);
 }

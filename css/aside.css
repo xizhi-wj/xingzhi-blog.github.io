@@ -456,7 +456,6 @@ hr {
   padding-right: 1rem;
 }
 
-
 .webinfo-item-title {
   display: flex;
 }
@@ -467,4 +466,40 @@ hr {
   width: 16px;
   text-align: center;
   font-size: 16px;
+}
+
+#aside-content .card-tag-cloud a sup {
+  opacity: 0.6;
+  margin-left: 2px;
+}
+
+#aside-content .card-tag-cloud a {
+  display: inline-block;
+  padding: 0 0.3rem;
+}
+
+sup {
+  top: -0.3em;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+#aside-content .card-tag-cloud a[href*="/tags/%E7%95%8C%E9%9D%A2%E6%95%88%E6%9E%9C/"] {
+  color: var(--xingzhi-lighttext) !important;
+  font-weight: 500;
+}
+
+#aside-content .card-tag-cloud a[href*="/tags/three-js/"] {
+  color: var(--xingzhi-lighttext) !important;
+  font-weight: 500;
+}
+
+.webinfo .webinfo-item a {
+  display: flex;
 }
