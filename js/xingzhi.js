@@ -383,14 +383,14 @@ var xingzhi = {
   },
   changeSayHelloText: function () {
     const e = [
-        "🤖️ 数码科技爱好者",
+        "🍰 甜食粉碎机",
         "🔍 分享与热心帮助",
-        "🏠 智能家居小能手",
+        "🦁️ CV攻城狮",
         "🔨 设计开发一条龙",
-        "🤝 专修交互与设计",
+        "⛰️ 爬山小能手",
         "🏃 脚踏实地行动派",
-        "🧱 团队小组发动机",
-        "💢 壮汉人狠话不多",
+        "🦉 熬夜冠军",
+        "💢 人不狠话不多",
       ],
       t = document.getElementById("author-info__sayhi");
     let o = e[Math.floor(Math.random() * e.length)];

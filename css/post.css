@@ -457,3 +457,79 @@ span.tagsPageCount {
   font-size: 1rem;
   margin-left: 4px;
 }
+
+#article-container code {
+  color: var(--xingzhi-white);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  margin: 0 4px;
+  background: var(--xingzhi-pink);
+  line-height: 2;
+  box-shadow: var(--xingzhi-shadow-border);
+}
+
+#article-container .headerlink {
+  float: right;
+  opacity: 0.08;
+  border-bottom-style: none;
+  border-bottom: none;
+  position: relative;
+  padding: 0;
+  border: none;
+  border-radius: 8px !important;
+  line-height: 1;
+  font-size: 1rem;
+}
+
+#article-container ul > li:not(.tab)::before {
+  top: 0.78em;
+  width: 0.42em;
+  height: 0.42em;
+  border: 0.21em solid #307af6;
+  border-radius: 0.42em;
+  background: 0 0;
+  content: "";
+  line-height: 0.42em;
+}
+
+#article-container ul > li:not(.tab)::before {
+  border: 0.21em solid var(--xingzhi-lighttext);
+  background: var(--xingzhi-lighttext);
+}
+
+#article-container ol,
+#article-container ul {
+  margin-top: 0.4rem;
+  /* padding: 0 0 0 0.8rem; */
+  list-style: none;
+  counter-reset: li 0;
+}
+
+#article-container ul > li:not(.tab) {
+  padding: 0.2em 0.2em 0.2em 1.4em;
+}
+
+#article-container ol li:not(.tab),
+#article-container ul li:not(.tab) {
+  position: relative;
+  margin: 0.2rem 0;
+}
+
+#article-container ol li::before,
+#article-container ul li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #307af6;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-out 0s;
+}
+
+#page p a:not(.headerlink) {
+  text-decoration: none;
+  border-bottom: 2px solid var(--xingzhi-lighttext);
+  font-weight: 700;
+  padding: 0 4px;
+  border-radius: 4px 4px 0 0;
+}

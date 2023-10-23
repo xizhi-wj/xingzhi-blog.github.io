@@ -1,0 +1,137 @@
+.author-content.author-content-item.toolsPage {
+  height: 25rem;
+  background: url(https://img.hoshinagi.top/tools/4081697985418_.pic.webp)
+    no-repeat top;
+  background-size: cover;
+  color: var(--xingzhi-white);
+  overflow: hidden;
+  margin-top: 0;
+}
+
+#tools-link.tools-link {
+  margin-top: 1rem;
+}
+
+#tools-link .tools-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0.5rem -6px 1rem -6px;
+  overflow-x: hidden;
+  text-align: center;
+  /* overflow: auto; */
+}
+
+#tools-link .tools-list .tools-list-item {
+  display: flex;
+  margin: 6px 6px;
+  transition: 0.3s;
+  border-radius: 12px;
+  height: 90px;
+  line-height: 17px;
+  transition-timing-function: ease-in-out;
+  position: relative;
+  width: calc(20% - 12px);
+  border: var(--style-border);
+  box-shadow: var(--xingzhi-shadow-border);
+  background: var(--xingzhi-card-bg);
+}
+
+#tools-link .tools-list .tools-list-item:hover {
+  transform: scale(1);
+  background: var(--xingzhi-lighttext);
+  border: var(--style-border-hover);
+  box-shadow: var(--xingzhi-shadow-main);
+}
+
+#tools-link .tools-list .tools-list-item:hover a img {
+  transition: 0.6s;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  margin: 5px;
+  min-width: 0;
+  min-height: 0;
+}
+
+#tools-link .tools-list .tools-list-item:hover .tool-item-info {
+  min-width: calc(100% - 20px);
+}
+
+#tools-link .tools-list .tools-list-item:hover a .tool-item-name {
+  color: var(--xingzhi-card-bg) !important;
+}
+
+#tools-link .tools-list .tools-list-item:hover a .tool-item-desc {
+  overflow: hidden;
+  width: 100%;
+  color: var(--xingzhi-card-bg);
+}
+
+#tools-link .tools-list .tools-list-item a {
+  display: flex;
+  border: none;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  color: var(--xingzhi-fontcolor);
+  text-decoration: none;
+  /* border-bottom: 2px solid var(--xingzhi-lighttext); */
+  font-weight: 700;
+  padding: 0 4px;
+  border-radius: 4px 4px 0 0;
+}
+
+#tools-link .tools-list .tools-list-item img {
+  border-radius: 32px;
+  margin: 15px 20px 15px 15px;
+  transition: 0.3s;
+  background: var(--xingzhi-background);
+  min-width: 60px;
+  min-height: 60px;
+  width: 60px;
+  height: 60px;
+}
+
+#tools-link .tools-list .tools-list-item .tool-item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(100% - 90px);
+  height: fit-content;
+}
+
+#tools-link .tools-list .tools-list-item .tool-item-info .tool-item-name {
+  text-align: left;
+  font-size: 19px;
+  line-height: 20px;
+  color: var(--xingzhi-fontcolor);
+  display: block;
+  padding: 0 10px 0 0;
+  font-weight: 700;
+  max-width: calc(100% - 12px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#tools-link .tools-list .tools-list-item .tool-item-info .tool-item-desc {
+  font-size: 0.93em;
+  white-space: normal;
+  padding: 5px 10px 16px 0;
+  color: var(--xingzhi-fontcolor);
+  text-align: left;
+  height: 40px;
+  text-overflow: ellipsis;
+  opacity: 0.7;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+@media screen and (max-width: 600px) {
+  #tools-link .tools-list .tools-list-item {
+    width: calc(100% - 12px) !important;
+  }
+}

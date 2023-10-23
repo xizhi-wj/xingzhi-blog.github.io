@@ -1,6 +1,6 @@
-#page h1.page-title {
+/* #page h1.page-title {
   margin: 0.4rem 2rem 0.2rem;
-}
+} */
 
 @media screen and (min-width: 1300px) {
   #page > div:not(.author-content-item) {

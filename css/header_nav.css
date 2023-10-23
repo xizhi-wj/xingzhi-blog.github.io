@@ -1109,7 +1109,7 @@ ul {
 }
 
 #page-header.not-top-img {
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
   height: 60px;
   background: 0 center;
 }

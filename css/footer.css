@@ -206,3 +206,8 @@ a.deal_link:hover {
   color: var(--xingzhi-main);
 }
 
+@media screen and (max-width: 768px) {
+  .footer_mini_logo {
+    display: none;
+  }
+}
