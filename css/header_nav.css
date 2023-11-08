@@ -401,7 +401,7 @@ i.xingzhifont {
 }
 
 #nav .site-page:hover {
-  color: var(--xingzhi-white) !important;
+  color: var(--xingzhi-white);
 }
 
 #page-header #nav .nav-button a {
@@ -1169,5 +1169,15 @@ ul {
   -moz-transition: 0s;
   -o-transition: 0s;
   -ms-transition: 0s;
-  transition:0s
+  transition: 0s;
+}
+
+@media screen and (max-width: 768px) {
+  #nav {
+    padding: 0 10px;
+  }
+
+  #page-header.not-top-img #nav #nav-right .nav-button a:hover {
+    color: var(--xingzhi-fontcolor) !important;
+  }
 }

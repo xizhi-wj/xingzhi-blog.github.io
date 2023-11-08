@@ -173,12 +173,12 @@ var getTimeState = () => {
     "dark" === document.documentElement.getAttribute("data-theme")
       ? (activateLightMode(),
         saveToLocal.set("theme", "light", 2),
-        xingzhi.renderSakuraAndParticle(),
+        // xingzhi.renderSakuraAndParticle(),
         void 0 !== GLOBAL_CONFIG.Snackbar &&
           btf.snackbarShow(GLOBAL_CONFIG.Snackbar.night_to_day, !1, 2e3),
         $(".menu-darkmode-text").text("深色模式"))
       : (activateDarkMode(),
-        xingzhi.renderSakuraAndParticle(),
+        // xingzhi.renderSakuraAndParticle(),
         saveToLocal.set("theme", "dark", 2),
         void 0 !== GLOBAL_CONFIG.Snackbar &&
           btf.snackbarShow(GLOBAL_CONFIG.Snackbar.day_to_night, !1, 2e3),
@@ -473,7 +473,7 @@ function initBlog() {
     xingzhi.sayhi(),
     xingzhi.addTag(),
     xingzhi.stopImgRightDrag(),
-    xingzhi.renderSakuraAndParticle(),
+    // xingzhi.renderSakuraAndParticle(),
     // xingzhi.addFriendLinksInFooter(),
     xingzhi.addPowerLinksInPostRightSide(),
     xingzhi.qrcodeCreate(),

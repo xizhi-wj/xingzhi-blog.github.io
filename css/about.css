@@ -846,3 +846,18 @@ strong {
 .author-content-item.personalities:hover .image {
   transform: rotate(-10deg);
 }
+
+@media screen and (max-width: 768px) {
+  #about-page .author-tag-left,
+  #about-page .author-tag-right {
+    display: none;
+  }
+
+  .author-content-item.personalities .image {
+    right: -70px;
+  }
+
+  .author-content-item.personalities {
+    min-height: 360px;
+  }
+}

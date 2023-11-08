@@ -154,3 +154,13 @@
     color: var(--xingzhi-theme);
     font-style: normal;
 }
+
+@media screen and (max-width:768px) {
+  .search-dialog {
+      top: 0;
+      left: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+  }
+}
